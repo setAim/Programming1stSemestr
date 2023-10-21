@@ -18,3 +18,4 @@ public class Example15 {
         if (a != b)  System.out.println("b - a = " + (b-a));
     }
 }
+
