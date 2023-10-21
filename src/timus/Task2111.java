@@ -3,6 +3,7 @@ package timus;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
+//not ready: time 1.065s
 public class Task2111 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
