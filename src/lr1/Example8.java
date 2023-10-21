@@ -17,7 +17,7 @@ public class Example8 {
         int dayNumber = in.nextInt();
 
         System.out.println("Today is " + dayOfWeek + ", " + dayNumber + " " + month);*/
-        System.out.println("Input day of week, month and date thought spacebar: ");
+        System.out.println("Input day of week, month and date separated by space: ");
         String inputDate = in.nextLine();
 
         int i = 3;
