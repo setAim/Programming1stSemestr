@@ -14,12 +14,12 @@ public class Symbol {
         this.symb = symb;
     }
 
-    public int returnSymbCode(char symb){
+    public int returnSymbCode(){
         int code = (int) symb;
         return code;
     }
 
-    public void printSymb(char symb){
+    public void printSymb(){
         System.out.println("Символ: " + symb + ", код: " + ((int) symb));
     }
 }
