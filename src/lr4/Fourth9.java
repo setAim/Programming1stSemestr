@@ -12,7 +12,6 @@ public class Fourth9 {
         System.out.println("Введите ключ: ");
         int key = in.nextInt();
 
-
         char[] chars = text.toCharArray();
         int[] codes = new int[text.length()];
         char[] locked = new char[chars.length];
