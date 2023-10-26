@@ -12,9 +12,12 @@ public class CharAndInt {
     }
 
     public CharAndInt(double d){
-        //Math.abs()
-        //this.number = (int) value;
-        //this.letter = c;
+        int i = (int) d; //"теряем" дробную часть
+        this.letter = (char) i;
+        double diff = d - i;
+        String s = String.valueOf(diff);
+        s = s.substring(2,4); //0.12340... - изначальная строка, берем символы 2 и 3.
+        this.number = Integer.parseInt(s);
     }
 
     public int getNumber() {

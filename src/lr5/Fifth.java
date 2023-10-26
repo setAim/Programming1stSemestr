@@ -29,8 +29,8 @@ public class Fifth {
             }
             case 2:{
                 System.out.println("-----Задание 2-----");
-                TwoSymbols twoSymb = new TwoSymbols('A','Z');
-                twoSymb.printAllBetween();
+                TwoSymbols twoSym = new TwoSymbols('A','Z');
+                twoSym.printAllBetween();
                 System.out.println("--Конец задания 2--");
                 break;
             }
@@ -50,11 +50,29 @@ public class Fifth {
             }
             case 4:{
                 System.out.println("-----Задание 4-----");
+                CharAndInt charAndInt = new CharAndInt(65.1234D);
+                char c = charAndInt.getLetter();
+                int i = charAndInt.getNumber();
+                System.out.println("char: " + c + ", int: "+ i);
                 System.out.println("--Конец задания 4--");
                 break;
             }
             case 5:{
                 System.out.println("-----Задание 5-----");
+                UnderOneHundred first = new UnderOneHundred();
+                UnderOneHundred second = new UnderOneHundred(120);
+                System.out.println("Объект класса, заданный через пустой конструктор, значение целочисленного поля: " + first.getNumber());
+                System.out.println("Подставим в число 1 значение 101 через сеттер");
+                first.setNumber(101);
+                boolean isNumberLess100 = first.checkNumber();
+                System.out.println("Число 1 в объекте класса меньше 100? " + isNumberLess100);
+                System.out.println("Объект класса, заданный через конструктор с целым числом 120, значение целочисленного поля: " + second.getNumber());
+                isNumberLess100 = second.checkNumber();
+                System.out.println("Число 2 в объекте класса меньше 100? " + isNumberLess100);
+                System.out.println("Подставим в число 2 значение 500 через метод");
+                second.placeNumber(500);
+                isNumberLess100 = second.checkNumber();
+                System.out.println("Число 2 в объекте класса меньше 100? " + isNumberLess100);
                 System.out.println("--Конец задания 5--");
                 break;
             }
