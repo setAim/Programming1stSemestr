@@ -78,6 +78,12 @@ public class Fifth {
             }
             case 6:{
                 System.out.println("-----Задание 6-----");
+                MaxAndMin compare = new MaxAndMin(10,6);
+                compare.printValue();
+                compare.putValue(12);
+                compare.printValue();
+                compare.putValue(14,-1);
+                compare.printValue();
                 System.out.println("--Конец задания 6--");
                 break;
             }
